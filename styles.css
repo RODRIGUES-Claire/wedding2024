@@ -254,11 +254,47 @@ section.first div{
   flex-direction: column;
 }
 
+@keyframes fadeInAndSlideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-80%);
+  }
+  40% {
+    opacity: 1;
+  }
+  45% {
+    transform: translateX(-80%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.illustration{
+  width: 500px;
+  margin-top: 16px;
+  
+  animation: fadeInAndSlideRight 2s forwards ease-out;
+}
+
 div.texts{
   display: flex;
   flex-direction: column;
   gap: 2em;
   width: 30%;
+
+  opacity: 0;
+  animation: fadeIn 1.5s forwards 1.2s;
+}
+
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 div.texts h1{
@@ -278,11 +314,6 @@ div.texts h3{
 
 div.texts p{
   font-family: rosarivo;
-}
-
-.illustration{
-    width: 500px;
-    margin-top: 16px;
 }
 
 div.part1{
@@ -666,11 +697,6 @@ footer{
 }
 
 
-
-
-
-
-
 /* ----------------------------------------
 ----------------PAGE-LOGEMENTs------------------ 
 ---------------------------------------- */
@@ -729,6 +755,29 @@ i.star{
 ----------------RESPONSIVE------------------ 
 ---------------------------------------- */
 
+
+@media only screen and (min-width: 3840px){
+
+  @keyframes fadeInAndSlideRight {
+    0% {
+      opacity: 0;
+      transform: translateX(-110%);
+    }
+    40% {
+      opacity: 1;
+    }
+    45% {
+      transform: translateX(-110%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }  
+
+}
+
+
 @media only screen and (min-width: 2560px) {
 
 div.texts{
@@ -753,6 +802,23 @@ div.logement p{
   font-size: 1.5em;
 }
 
+@keyframes fadeInAndSlideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-80%);
+  }
+  40% {
+    opacity: 1;
+  }
+  45% {
+    transform: translateX(-80%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+} 
+
 }
 
 @media only screen and (min-width: 1080px) {
@@ -760,6 +826,23 @@ div.logement p{
   div.contact{
     flex-direction: initial;
   }
+
+  @keyframes fadeInAndSlideRight {
+    0% {
+      opacity: 0;
+      transform: translateX(-75%);
+    }
+    40% {
+      opacity: 1;
+    }
+    45% {
+      transform: translateX(-75%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  } 
 
   }
 
@@ -784,6 +867,23 @@ div.logement p{
   div.card-container{
     flex-wrap: wrap;
   }
+
+  @keyframes fadeInAndSlideRight {
+    0% {
+      opacity: 0;
+      transform: translateX(-70%);
+    }
+    40% {
+      opacity: 1;
+    }
+    45% {
+      transform: translateX(-70%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }  
   
   }
 
@@ -794,6 +894,11 @@ div.logement p{
 
 html{
   height: 90%;
+}
+
+.illustration, div.texts{
+  animation: none; /* Désactive l'animation */
+  opacity: 1;
 }
 
 header{
