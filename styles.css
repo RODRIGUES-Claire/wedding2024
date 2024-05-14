@@ -192,10 +192,13 @@ header{
     align-items: center;
 }
 
+header div{
+  display: flex;
+}
+
 div.title{
     flex-grow: 1;
     text-align: center;
-    display: flex;
     flex-direction: column;
     justify-content: center; /* Centre verticalement les éléments */
     align-items: center; /* Centre horizontalement les éléments */
@@ -206,19 +209,18 @@ div.buttons, div.contact{
 }
 
 div.buttons{
-    display: flex;
     justify-content: flex-end;
-}
-
-div.contact{
-  display: flex;
 }
 
 div.contact div{
   display: flex;
 }
 
-div.contact a{
+div.contact{
+  align-items: center;
+}
+
+.contact > div:nth-of-type(-n+2) a{
     font-size: 24px;
     color: var(--black);
     margin-right: 16px;
@@ -416,6 +418,116 @@ h1.special{
 /* ----------------------------------------
 ----------------BUTTONS------------------ 
 ---------------------------------------- */
+
+/* Button Languages */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.switch > a {
+  position: absolute;
+  top: 11px;
+  pointer-events: none;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, .06);
+  width: 50%;
+  text-align: center;
+}
+
+input.check-toggle-round-flat:checked ~ .off {
+  color: var(--primaryDarkest);
+}
+
+input.check-toggle-round-flat:checked ~ .on {
+  color: var(--bg);
+}
+
+.switch > a.on {
+  left: 0;
+  padding-left: 2px;
+  color: var(--primaryDarkest);
+}
+
+.switch > a.off {
+  right: 0;
+  padding-right: 4px;
+  color: var(--bg);
+}
+
+.check-toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+.check-toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+input.check-toggle-round-flat + label {
+  padding: 2px;
+  width: 97px;
+  height: 35px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  border-radius: 60px;
+}
+input.check-toggle-round-flat + label:before, input.check-toggle-round-flat + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+
+input.check-toggle-round-flat + label:before {
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  background-color: var(--primaryDarkest);
+  -webkit-moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  border-radius: 60px;
+}
+input.check-toggle-round-flat + label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 48px;
+  background-color: var(--bg);
+  -webkit-border-radius: 52px;
+  -moz-border-radius: 52px;
+  -ms-border-radius: 52px;
+  -o-border-radius: 52px;
+  border-radius: 52px;
+  -webkit-transition: margin 0.2s;
+  -moz-transition: margin 0.2s;
+  -o-transition: margin 0.2s;
+  transition: margin 0.2s;
+}
+
+/* input.check-toggle-round-flat:checked + label {
+} */
+
+input.check-toggle-round-flat:checked + label:after {
+  margin-left: 44px;
+}
+
+
 
 /* Buttons basic */
 

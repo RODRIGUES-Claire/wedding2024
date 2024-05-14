@@ -2,12 +2,12 @@
 <html lang="fr">
 
     <head>
-        <title>Mariage C&A | RSVP</title>
+        <title id="website-title-1">Mariage C&A | Invitation</title>
 
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-        <link rel="icon" type="image/png" href="../assets/img/Favicon.png">
+        <link rel="icon" type="image/png" href="assets/img/Favicon.png">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,20 +16,20 @@
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
         
-        <link rel="stylesheet" href="../styles.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
 
     <body style = " --bg: #f6f6f6 ; --black: #2e3c40; --disableBody: #faebda ; --disableText : #e49153 ; --primary: #c45824 ; --primaryLight: #de7531 ; --primaryDark: #ad4821 ; --primaryDarkest: #8a3a22 ;">
 
         <header>
             <div class="buttons">
-                <a class="basic" href="../index.html">Invitation</a>
-                <a class="basic" href="omnia_page_logement.html">Logements</a>
-                <a class="basic" href="omnia_page_rsvp.html">RSVP</a>
-                <!-- <a class="disable" href="#">Gallerie</a> -->
+                <a class="basic" href="unum_invitation.html" id="invitation">Invitation</a>
+                <a class="basic" href="unum_page_logement.html" id="logements">Logements</a>
+                <a class="basic" href="unum_page_rsvp.html">RSVP</a>
+                <!-- <a class="basic" href="#">Gallerie</a> -->
             </div>
             <div class="title">
-                <h1 class="special">MARIAGE</h1>
+                <h1 class="special" id="text-wedding">MARIAGE</h1>
                 <p class="special">Claire & Alexandre</p>
             </div>
             <div class="contact">
@@ -38,6 +38,12 @@
                 </div>
                 <div>
                     <a href="tel:+33641755591" class="fa fa-phone" title="06 41 75 55 91"></a><p>06 41 75 55 91</p>
+                </div>
+                <div class="switch">
+                    <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+                    <label for="language-toggle"></label>
+                    <a class="on">FR</a>
+                    <a class="off">PT</a>
                 </div>
             </div>
         </header>
@@ -51,15 +57,17 @@
                     <h1>RSVP</h1>
 
                     <div class="img">
-                        <object data="../assets/img/illustration_2.svg" type="image/svg+xml"></object>
+                        <object data="assets/img/illustration_2.svg" type="image/svg+xml"></object>
                     </div>
                 </div>
 
                 <div class="form-container">
 
                     <div class="form">
-                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc5TgXUumevXB33pmp7rO9v-lAjrAfAf0toyD5AGMc70_Jw1w/viewform?embedded=true" width="1000" height="1231" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe4hfeXhTmw639h7cCk7zXpdeWmA2JloRmh3CFpzNFRJa7g1A/viewform?embedded=true" width="1000" height="1231" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
                     </div>
+
+                    
                 </div>
             </section>
 
@@ -68,8 +76,10 @@
         <hr class="bottom">
 
         <footer>
-            <h3>Made by les mimines de Claire</h3>
+            <h4 id="footer_text">Made by les mimines de Claire</h4>
         </footer>
+
+        <script src="scripts.js"></script>
 
     </body>
 

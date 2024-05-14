@@ -2,7 +2,7 @@
 <html lang="fr">
 
     <head>
-        <title>Mariage C&A | Invitation</title>
+        <title id="website-title-1">Mariage C&A | Invitation</title>
 
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -22,13 +22,13 @@
 
         <header>
             <div class="buttons">
-                <a class="basic" href="unum_invitation.html">Invitation</a>
-                <a class="basic" href="unum/unum_page_logement.html">Logements</a>
-                <a class="basic" href="unum/unum_page_rsvp.html">RSVP</a>
+                <a class="basic" href="unum_invitation.html" id="invitation">Invitation</a>
+                <a class="basic" href="unum_page_logement.html" id="logements">Logements</a>
+                <a class="basic" href="unum_page_rsvp.html">RSVP</a>
                 <!-- <a class="basic" href="#">Gallerie</a> -->
             </div>
             <div class="title">
-                <h1 class="special">MARIAGE</h1>
+                <h1 class="special" id="text-wedding">MARIAGE</h1>
                 <p class="special">Claire & Alexandre</p>
             </div>
             <div class="contact">
@@ -38,8 +38,12 @@
                 <div>
                     <a href="tel:+33641755591" class="fa fa-phone" title="06 41 75 55 91"></a><p>06 41 75 55 91</p>
                 </div>
-
-
+                <div class="switch">
+                    <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+                    <label for="language-toggle"></label>
+                    <a class="on">FR</a>
+                    <a class="off">PT</a>
+                </div>
             </div>
         </header>
 
@@ -53,15 +57,12 @@
                         <h1>Claire & Alexandre</h1>
                     </div>
                     <div>
-                        <h2>Nous avons le plaisir de vous convier à notre mariage qui aura lieu le
-                        <strong style="    font-family: 'Cardo', serif;
-                        font-weight: 700;
-                        font-style: normal; margin-left: 16px; font-size: 1.2em;">25 Octobre 2024 !</strong></h2>
+                        <h2 id="subtitle-firstsection">Nous avons le plaisir de vous convier à notre mariage qui aura lieu le 25 Octobre 2024 !</h2>
                     </div>
                     <div>
-                        <p>Réponse souhaitée avant le <strong>25 Août</strong> !</p>
+                        <p id="text-rsvp">Réponse souhaitée avant le 25 Août !</p>
                         <div>
-                            <a href="unum/unum_page_rsvp.html" class="outline-white rsvp-button">Donner sa réponse</a>
+                            <a href="omnia/omnia_page_rsvp.html" class="outline-white rsvp-button" id="button-rsvp">Donner sa réponse</a>
                         </div>
                     </div>
                     
@@ -72,20 +73,20 @@
             </section>
 
             <section class="second">
-                <h1>Vous êtes invités pour :</h1>
+                <h1 id="title-secondsection">Vous êtes invités pour :</h1>
 
                 <div class="card-container">
 
                     <div class="card">
                         <div class="card-top">
                             <span class="fa fa-church"></span>
-                            <h2>La Cérémonie</h2>
+                            <h2 id="title-ceremonie">La Cérémonie</h2>
                             <object class="card_illu" data="assets/img/illustration_2.svg" type="image/svg+xml"></object>
                         </div>
                         <div class="card-bottom">
                             <ul>
                                 <li>
-                                    <i class="far fa-calendar"></i><p>25 Octobre 2024</p>
+                                    <i class="far fa-calendar"></i><p id="date-wedding">25 Octobre 2024</p>
                                 </li>
                                 <li>
                                     <i class="far fa-clock"></i><p>14h00</p>
@@ -97,7 +98,7 @@
                                     <p>D92A, 81380 Cagnac-les-Mines</p>
                                 </li>
                                 <li>
-                                    <i class="far fa-map"></i><a href="https://www.google.com/maps/dir//D92A,+81380+Cagnac-les-Mines/@43.9693918,2.0719486,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x12ade9d03b026caf:0x79c8c62094746757!2m2!1d2.1543935!2d43.9694398?entry=ttu" target="_blank">Voir sur la carte</a>
+                                    <i class="far fa-map"></i><a href="https://www.google.com/maps/dir//D92A,+81380+Cagnac-les-Mines/@43.9693918,2.0719486,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x12ade9d03b026caf:0x79c8c62094746757!2m2!1d2.1543935!2d43.9694398?entry=ttu" target="_blank" id="see-card">Voir sur la carte</a>
                                 </li>
                             </ul>
                         </div>
@@ -106,13 +107,13 @@
                     <div class="card">
                         <div class="card-top">
                             <span class="fa fa-champagne-glasses"></span>
-                            <h2>Le Vin D'honneur</h2>
+                            <h2 id="title-cocktail">Le Vin D'honneur</h2>
                             <object class="card_illu" data="assets/img/illustration_2.svg" type="image/svg+xml"></object>
                         </div>
                         <div class="card-bottom">
                             <ul>
                                 <li>
-                                    <i class="far fa-calendar"></i><p>25 Octobre 2024</p>
+                                    <i class="far fa-calendar"></i><p id="date-wedding1">25 Octobre 2024</p>
                                 </li>
                                 <li>
                                     <i class="far fa-clock"></i><p>17h00</p>
@@ -124,7 +125,7 @@
                                     <p>5511 D988 Route départementale, 81310 Lisle-sur-Tarn</p>
                                 </li>
                                 <li>
-                                    <i class="far fa-map"></i><a href="https://www.google.com/maps/dir//manoir+de+lisle+sur+tarn/@43.8825013,1.8355803,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x12add32e255dc4a9:0xf05d622b519fcac7!2m2!1d1.8415935!2d43.8749413?entry=ttu" target="_blank">Voir sur la carte</a>
+                                    <i class="far fa-map"></i><a href="https://www.google.com/maps/dir//manoir+de+lisle+sur+tarn/@43.8825013,1.8355803,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x12add32e255dc4a9:0xf05d622b519fcac7!2m2!1d1.8415935!2d43.8749413?entry=ttu" target="_blank" id="see-card1">Voir sur la carte</a>
                                 </li>
                             </ul>
                         </div>
@@ -138,8 +139,10 @@
         <hr class="bottom">
         
         <footer>
-            <h4>Made by les mimines de Claire</h4>
+            <h4 id="footer_text">Made by les mimines de Claire</h4>
         </footer>
+
+        <script src="scripts.js"></script>
 
     </body>
 
