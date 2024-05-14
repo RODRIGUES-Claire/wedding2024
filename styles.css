@@ -629,6 +629,49 @@ div.logement p{
 }
 
 
+@media only screen and (min-width: 720px) {
+
+  div.title{
+    flex-grow: 0;
+  }
+
+  div.contact{
+    flex-direction: column;
+  }
+
+  div.texts{
+    width: 40%;
+  }
+
+  section.second{
+    width: 100%;
+  }
+
+  div.card-container{
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  div.logement-container{
+    width: 1200px;
+    gap: 120px;
+  }
+  
+  div.logement{
+    width: 500px;
+  }
+  
+  div.logement h3{
+    font-size: 1.5em;
+  }
+  
+  div.logement p{
+    font-size: 1.5em;
+  }
+  
+  }
+
+
 /* PHONES */
 
 @media only screen and (max-width: 500px){
