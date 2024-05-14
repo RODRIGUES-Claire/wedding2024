@@ -367,6 +367,13 @@ div.card-top span{
   font-size: 3em;
 }
 
+div.card a{
+  color: var(--primary);
+}
+
+div.card a:hover{
+  color: var(--primaryDarkest);
+}
 
 
 
@@ -628,8 +635,15 @@ div.logement p{
 
 }
 
+@media only screen and (min-width: 1080px) {
 
-@media only screen and (min-width: 720px) {
+  div.contact{
+    flex-direction: initial;
+  }
+
+  }
+
+@media only screen and (max-width: 1280px) {
 
   div.title{
     flex-grow: 0;
@@ -648,25 +662,7 @@ div.logement p{
   }
 
   div.card-container{
-    width: 100%;
     flex-wrap: wrap;
-  }
-  
-  div.logement-container{
-    width: 1200px;
-    gap: 120px;
-  }
-  
-  div.logement{
-    width: 500px;
-  }
-  
-  div.logement h3{
-    font-size: 1.5em;
-  }
-  
-  div.logement p{
-    font-size: 1.5em;
   }
   
   }
