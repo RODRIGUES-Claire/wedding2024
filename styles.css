@@ -927,7 +927,8 @@ div.buttons{
   width: 100%;
   background-color: var(--bg);
   z-index: 9999;
-  border-top: 1px solid var(--primaryDarkest);
+  /* border-top: 1px solid var(--primaryDarkest); */
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.3);
 }
 
 div.buttons a{
@@ -947,6 +948,10 @@ div.buttons a:active{
   color: var(--primaryDarkest);
 }
 
+section.second h1{
+  /* margin: 0 16px; */
+  width: 90%;
+}
 
 div.form iframe{
   width: 360px;
