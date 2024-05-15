@@ -930,6 +930,24 @@ div.buttons{
   border-top: 1px solid var(--primaryDarkest);
 }
 
+div.buttons a{
+  width: 30%;
+  text-align: center;
+  margin: 0;
+  border-radius: 0;
+}
+
+div.buttons a:nth-child(1),
+div.buttons a:nth-child(2){
+  border-right: 1px solid var(--primaryDarkest);
+}
+
+div.buttons a:active{
+  background-color: rgba(138, 58, 34, .15);
+  color: var(--primaryDarkest);
+}
+
+
 div.form iframe{
   width: 360px;
 }
