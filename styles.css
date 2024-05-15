@@ -365,7 +365,7 @@ div.card-container{
 }
 
 div.card{
-  border: 1px solid var(--primaryDarkest);
+  border-top: 4px solid var(--primaryDarkest);
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -374,7 +374,7 @@ div.card{
   padding: 64px 16px;
   width: 325px;
   text-align: center;
-  box-shadow: 4px 4px 5px rgba(46, 60, 64, .2);
+  box-shadow: 0 2px 5px rgba(46, 60, 64, .2);
 }
 
 ul{
