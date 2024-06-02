@@ -19,11 +19,12 @@ function loadLanguage(langCode) {
             document.getElementById('website-title-1').textContent = lang["website-title-1"];
             document.getElementById('invitation').textContent = lang["invitation"];
             document.getElementById('logements').textContent = lang["logements"];
+            document.getElementById('rsvp').textContent = lang["rsvp"];
             document.getElementById('text-wedding').textContent = lang["text-wedding"];
             document.getElementById('footer_text').textContent = lang["footer_text"];
 
             document.getElementById('title-logement').textContent = lang["title-logement"];
-            document.getElementById('text-contactus').textContent = lang["text-contactus"];
+            // document.getElementById('text-contactus').textContent = lang["text-contactus"];
             document.getElementById('voirplus').textContent = lang["voirplus"];
             document.getElementById('voirplus1').textContent = lang["voirplus1"];
             document.getElementById('voirplus2').textContent = lang["voirplus2"];

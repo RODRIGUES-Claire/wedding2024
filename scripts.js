@@ -19,6 +19,7 @@ function loadLanguage(langCode) {
             document.getElementById('website-title-1').textContent = lang["website-title-1"];
             document.getElementById('invitation').textContent = lang["invitation"];
             document.getElementById('logements').textContent = lang["logements"];
+            document.getElementById('rsvp').textContent = lang["rsvp"];
             document.getElementById('text-wedding').textContent = lang["text-wedding"];
             document.getElementById('footer_text').textContent = lang["footer_text"];
             
