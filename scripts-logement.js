@@ -24,7 +24,7 @@ function loadLanguage(langCode) {
             document.getElementById('footer_text').textContent = lang["footer_text"];
 
             document.getElementById('title-logement').textContent = lang["title-logement"];
-            // document.getElementById('text-contactus').textContent = lang["text-contactus"];
+            document.getElementById('text-contactus').textContent = lang["text-contactus"];
             document.getElementById('voirplus').textContent = lang["voirplus"];
             document.getElementById('voirplus1').textContent = lang["voirplus1"];
             document.getElementById('voirplus2').textContent = lang["voirplus2"];
