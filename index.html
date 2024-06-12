@@ -1,203 +1,288 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <title id="website-title-1">Mariage C&A | Invitation</title>
 
-    <head>
-        <title id="website-title-1">Mariage C&A | Invitation</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-        <meta charset="utf-8">
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="icon" type="image/png" href="assets/img/Favicon.png" />
 
-        <link rel="icon" type="image/png" href="assets/img/Favicon.png">
+    <link
+      href="assets/fontawesome-free-6.5.2-web/css/all.css"
+      rel="stylesheet"
+    />
 
-        <link href="assets/fontawesome-free-6.5.2-web/css/all.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Parisienne&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Parisienne&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-        <link rel="stylesheet" href="styles.css">
-    </head>
+  <body
+    style="
+      --bg: rgb(246, 246, 246);
+      --black: #2e3c40;
+      --disableBody: #faebda;
+      --disableText: #e49153;
+      --primary: #c45824;
+      --primaryLight: #de7531;
+      --primaryDark: #ad4821;
+      --primaryDarkest: #8a3a22;
+    "
+  >
+    <header>
+      <div class="buttons">
+        <a class="basic" href="index.html" id="invitation">Invitation</a>
+        <a class="basic" href="page_logement.html" id="logements">Logements</a>
+        <a class="basic" href="page_rsvp.html" id="rsvp">RSVP</a>
+        <!-- <a class="basic" href="#">Gallerie</a> -->
+      </div>
+      <div class="title">
+        <h1 class="special" id="text-wedding">MARIAGE</h1>
+        <p class="special">Claire & Alexandre</p>
+      </div>
+      <div class="contact">
+        <div>
+          <a
+            href="mailto:rodclaire06@gmail.com"
+            class="fa fa-envelope"
+            title="rodclaire06@gmail.com"
+          ></a>
+          <p>rodclaire06@gmail.com</p>
+        </div>
+        <div>
+          <a
+            href="tel:+33641755591"
+            class="fa fa-phone"
+            title="+33 06 41 75 55 91"
+          ></a>
+          <p>+33 06 41 75 55 91</p>
+        </div>
+        <div class="switch">
+          <input
+            id="language-toggle"
+            class="check-toggle check-toggle-round-flat"
+            type="checkbox"
+          />
+          <label for="language-toggle"></label>
+          <a class="on">FR</a>
+          <a class="off">PT</a>
+        </div>
+      </div>
+    </header>
 
-    <body style = " --bg: rgb(246, 246, 246) ; --black: #2e3c40; --disableBody: #faebda ; --disableText : #e49153 ; --primary: #c45824 ; --primaryLight: #de7531 ; --primaryDark: #ad4821 ; --primaryDarkest: #8a3a22 ;">
+    <!-- <hr> -->
 
-        <header>
-            <div class="buttons">
-                <a class="basic" href="index.html" id="invitation">Invitation</a>
-                <a class="basic" href="page_logement.html" id="logements">Logements</a>
-                <a class="basic" href="page_rsvp.html" id="rsvp">RSVP</a>
-                <!-- <a class="basic" href="#">Gallerie</a> -->
+    <main>
+      <section class="first">
+        <div class="texts">
+          <div>
+            <h1>Claire & Alexandre</h1>
+          </div>
+          <div>
+            <h2 id="subtitle-firstsection">
+              Nous avons le plaisir de vous convier à notre mariage qui aura
+              lieu le 25 Octobre 2024 !
+            </h2>
+          </div>
+          <div>
+            <p id="text-rsvp">Réponse souhaitée avant le 25 Août !</p>
+            <div>
+              <a
+                href="omnia_page_rsvp.html"
+                class="bezel rsvp-button"
+                id="button-rsvp"
+                >Donner sa réponse</a
+              >
             </div>
-            <div class="title">
-                <h1 class="special" id="text-wedding">MARIAGE</h1>
-                <p class="special">Claire & Alexandre</p>
+          </div>
+        </div>
+        <div class="illustration">
+          <object
+            data="assets/img/illustration.svg"
+            type="image/svg+xml"
+          ></object>
+        </div>
+      </section>
+
+      <section class="second">
+        <h1 id="title-secondsection">Vous êtes invités pour :</h1>
+
+        <div class="card-container">
+          <div class="card">
+            <div class="card-top">
+              <span class="fa fa-church"></span>
+              <h2 id="title-ceremonie">La Cérémonie</h2>
+              <object
+                class="card_illu"
+                data="assets/img/illustration_2.svg"
+                type="image/svg+xml"
+              ></object>
             </div>
-            <div class="contact">
-                <div>
-                    <a href="mailto:rodclaire06@gmail.com" class="fa fa-envelope" title="rodclaire06@gmail.com"></a><p>rodclaire06@gmail.com</p>
-                </div>
-                <div>
-                    <a href="tel:+33641755591" class="fa fa-phone" title="+33 06 41 75 55 91"></a><p>+33 06 41 75 55 91</p>
-                </div>
-                <div class="switch">
-                    <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
-                    <label for="language-toggle"></label>
-                    <a class="on">FR</a>
-                    <a class="off">PT</a>
-                </div>
+            <div class="card-bottom">
+              <ul>
+                <li>
+                  <i class="far fa-calendar"></i>
+                  <p id="date-wedding">25 Octobre 2024</p>
+                </li>
+                <li>
+                  <i class="far fa-clock"></i>
+                  <p>14h00</p>
+                </li>
+                <li>
+                  <i class="fas fa-map-marker-alt"></i>
+                  <p>Église Notre-Dame-de-la-Drèche</p>
+                </li>
+                <li>
+                  <p>D92A, 81380 Cagnac-les-Mines</p>
+                </li>
+                <li>
+                  <i class="far fa-map"></i
+                  ><a
+                    href="https://www.google.com/maps/dir//D92A,+81380+Cagnac-les-Mines/@43.9693918,2.0719486,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x12ade9d03b026caf:0x79c8c62094746757!2m2!1d2.1543935!2d43.9694398?entry=ttu"
+                    target="_blank"
+                    id="see-card"
+                    >Voir sur la carte</a
+                  >
+                </li>
+              </ul>
             </div>
-        </header>
+          </div>
 
-        <!-- <hr> -->
+          <div class="card">
+            <div class="card-top">
+              <span class="fa fa-champagne-glasses"></span>
+              <h2 id="title-cocktail">Le Vin D'honneur</h2>
+              <object
+                class="card_illu"
+                data="assets/img/illustration_2.svg"
+                type="image/svg+xml"
+              ></object>
+            </div>
+            <div class="card-bottom">
+              <ul>
+                <li>
+                  <i class="far fa-calendar"></i>
+                  <p id="date-wedding1">25 Octobre 2024</p>
+                </li>
+                <li>
+                  <i class="far fa-clock"></i>
+                  <p>17h30</p>
+                </li>
+                <li>
+                  <i class="fa fa-location-dot"></i>
+                  <p>Manoir de Lisle sur Tarn</p>
+                </li>
+                <li>
+                  <p>5511 D988 Route départementale, 81310 Lisle-sur-Tarn</p>
+                </li>
+                <li>
+                  <i class="far fa-map"></i
+                  ><a
+                    href="https://www.google.com/maps/dir//manoir+de+lisle+sur+tarn/@43.8825013,1.8355803,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x12add32e255dc4a9:0xf05d622b519fcac7!2m2!1d1.8415935!2d43.8749413?entry=ttu"
+                    target="_blank"
+                    id="see-card1"
+                    >Voir sur la carte</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
 
-        <main>
+          <div class="card">
+            <div class="card-top">
+              <span class="fa fa-utensils"></span>
+              <h2 id="title-diner">Le Repas</h2>
+              <object
+                class="card_illu"
+                data="assets/img/illustration_2.svg"
+                type="image/svg+xml"
+              ></object>
+            </div>
+            <div class="card-bottom">
+              <ul>
+                <li>
+                  <i class="far fa-calendar"></i>
+                  <p id="date-wedding2">25 Octobre 2024</p>
+                </li>
+                <li>
+                  <i class="far fa-clock"></i>
+                  <p>20h00</p>
+                </li>
+                <li>
+                  <i class="fa fa-map-marker-alt"></i>
+                  <p>Manoir de Lisle sur Tarn</p>
+                </li>
+                <li>
+                  <p>5511 D988 Route départementale, 81310 Lisle-sur-Tarn</p>
+                </li>
+                <li>
+                  <i class="far fa-map"></i
+                  ><a
+                    href="https://www.google.com/maps/dir//manoir+de+lisle+sur+tarn/@43.8825013,1.8355803,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x12add32e255dc4a9:0xf05d622b519fcac7!2m2!1d1.8415935!2d43.8749413?entry=ttu"
+                    target="_blank"
+                    id="see-card2"
+                    >Voir sur la carte</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
 
-            <section class="first">
-                <div class="texts">
-                    <div>
-                        <h1>Claire & Alexandre</h1>
-                    </div>
-                    <div>
-                        <h2 id="subtitle-firstsection">Nous avons le plaisir de vous convier à notre mariage qui aura lieu le 25 Octobre 2024 !</h2>
-                    </div>
-                    <div>
-                        <p id="text-rsvp">Réponse souhaitée avant le 25 Août !</p>
-                        <div>
-                            <a href="page_rsvp.html" class="bezel rsvp-button" id="button-rsvp">Donner sa réponse</a>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="illustration">
-                    <object data="assets/img/illustration.svg" type="image/svg+xml"></object>
-                </div>
-            </section>
+          <div class="card">
+            <div class="card-top">
+              <span class="fa fa-mug-saucer"></span>
+              <h2 id="title-brunch">Le Brunch</h2>
+              <object
+                class="card_illu"
+                data="assets/img/illustration_2.svg"
+                type="image/svg+xml"
+              ></object>
+            </div>
+            <div class="card-bottom">
+              <ul>
+                <li>
+                  <i class="far fa-calendar"></i>
+                  <p id="date-brunch">26 Octobre 2024</p>
+                </li>
+                <li>
+                  <i class="far fa-clock"></i>
+                  <p>11h30</p>
+                </li>
+                <li>
+                  <i class="fas fa-map-marker-alt"></i>
+                  <p>Manoir de Lisle sur Tarn</p>
+                </li>
+                <li>
+                  <p>5511 D988 Route départementale, 81310 Lisle-sur-Tarn</p>
+                </li>
+                <li>
+                  <i class="far fa-map"></i
+                  ><a
+                    href="https://www.google.com/maps/dir//manoir+de+lisle+sur+tarn/@43.8825013,1.8355803,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x12add32e255dc4a9:0xf05d622b519fcac7!2m2!1d1.8415935!2d43.8749413?entry=ttu"
+                    target="_blank"
+                    id="see-card3"
+                    >Voir sur la carte</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-            <section class="second">
-                <h1 id="title-secondsection">Vous êtes invités pour :</h1>                
+    <hr class="bottom" />
 
-                <div class="card-container">
+    <footer>
+      <h3 id="footer_text">Made by les mimines de Claire</h3>
+    </footer>
 
-                    <div class="card">
-                        <div class="card-top">
-                            <span class="fa fa-church"></span>
-                            <h2 id="title-ceremonie">La Cérémonie</h2>
-                            <object class="card_illu" data="assets/img/illustration_2.svg" type="image/svg+xml"></object>
-                        </div>
-                        <div class="card-bottom">
-                            <ul>
-                                <li>
-                                    <i class="far fa-calendar"></i><p id="date-wedding">25 Octobre 2024</p>
-                                </li>
-                                <li>
-                                    <i class="far fa-clock"></i><p>14h00</p>
-                                </li>
-                                <li>
-                                    <i class="fas fa-map-marker-alt"></i><p>Église Notre-Dame-de-la-Drèche</p>
-                                </li>
-                                <li>
-                                    <p>D92A, 81380 Cagnac-les-Mines</p>
-                                </li>
-                                <li>
-                                    <i class="far fa-map"></i><a href="https://www.google.com/maps/dir//D92A,+81380+Cagnac-les-Mines/@43.9693918,2.0719486,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x12ade9d03b026caf:0x79c8c62094746757!2m2!1d2.1543935!2d43.9694398?entry=ttu" target="_blank" id="see-card">Voir sur la carte</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-    
-                    <div class="card">
-                        <div class="card-top">
-                            <span class="fa fa-champagne-glasses"></span>
-                            <h2 id="title-cocktail">Le Vin D'honneur</h2>
-                            <object class="card_illu" data="assets/img/illustration_2.svg" type="image/svg+xml"></object>
-                        </div>
-                        <div class="card-bottom">
-                            <ul>
-                                <li>
-                                    <i class="far fa-calendar"></i><p id="date-wedding1">25 Octobre 2024</p>
-                                </li>
-                                <li>
-                                    <i class="far fa-clock"></i><p>17h00</p>
-                                </li>
-                                <li>
-                                    <i class="fa fa-location-dot"></i><p>Manoir de Lisle sur Tarn</p>
-                                </li>
-                                <li>
-                                    <p>5511 D988 Route départementale, 81310 Lisle-sur-Tarn</p>
-                                </li>
-                                <li>
-                                    <i class="far fa-map"></i><a href="https://www.google.com/maps/dir//manoir+de+lisle+sur+tarn/@43.8825013,1.8355803,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x12add32e255dc4a9:0xf05d622b519fcac7!2m2!1d1.8415935!2d43.8749413?entry=ttu" target="_blank" id="see-card1">Voir sur la carte</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-top">
-                            <span class="fa fa-utensils"></span>
-                            <h2 id="title-diner">Le Repas</h2>
-                            <object class="card_illu" data="assets/img/illustration_2.svg" type="image/svg+xml"></object>
-                        </div>
-                        <div class="card-bottom">
-                            <ul>
-                                <li>
-                                    <i class="far fa-calendar"></i><p id="date-wedding2">25 Octobre 2024</p>
-                                </li>
-                                <li>
-                                    <i class="far fa-clock"></i><p>20h00</p>
-                                </li>
-                                <li>
-                                    <i class="fa fa-map-marker-alt"></i><p>Manoir de Lisle sur Tarn</p>
-                                </li>
-                                <li>
-                                    <p>5511 D988 Route départementale, 81310 Lisle-sur-Tarn</p>
-                                </li>
-                                <li>
-                                    <i class="far fa-map"></i><a href="https://www.google.com/maps/dir//manoir+de+lisle+sur+tarn/@43.8825013,1.8355803,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x12add32e255dc4a9:0xf05d622b519fcac7!2m2!1d1.8415935!2d43.8749413?entry=ttu" target="_blank" id="see-card2">Voir sur la carte</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-top">
-                            <span class="fa fa-mug-saucer"></span>
-                            <h2 id="title-brunch">Le Brunch</h2>
-                            <object class="card_illu" data="assets/img/illustration_2.svg" type="image/svg+xml"></object>
-                        </div>
-                        <div class="card-bottom">
-                            <ul>
-                                <li>
-                                    <i class="far fa-calendar"></i><p id="date-brunch">26 Octobre 2024</p>
-                                </li>
-                                <li>
-                                    <i class="far fa-clock"></i><p>11h30</p>
-                                </li>
-                                <li>
-                                    <i class="fas fa-map-marker-alt"></i><p>Manoir de Lisle sur Tarn</p>
-                                </li>
-                                <li>
-                                    <p>5511 D988 Route départementale, 81310 Lisle-sur-Tarn</p>
-                                </li>
-                                <li>
-                                    <i class="far fa-map"></i><a href="https://www.google.com/maps/dir//manoir+de+lisle+sur+tarn/@43.8825013,1.8355803,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x12add32e255dc4a9:0xf05d622b519fcac7!2m2!1d1.8415935!2d43.8749413?entry=ttu" target="_blank" id="see-card3">Voir sur la carte</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-        </main>
-
-        <hr class="bottom">
-        
-        <footer>
-            <h3 id="footer_text">Made by les mimines de Claire</h3>
-        </footer>
-
-        <script src="scripts.js"></script>
-
-    </body>
-
+    <script src="scripts.js"></script>
+  </body>
 </html>
