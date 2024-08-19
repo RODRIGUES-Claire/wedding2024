@@ -1,18 +1,18 @@
 {
-    "website-title-1":"Mariage C&A | Invitation",
-    "invitation": "Invitation",
-    "logements": "Logements",
-    "rsvp": "RSVP",
-    "text-wedding": "MARIAGE",    
-    "footer_text": "Made by les mimines de Claire",
+  "website-title-1": "Mariage C&A | Invitation",
+  "invitation": "Invitation",
+  "logements": "Logements",
+  "rsvp": "RSVP",
+  "text-wedding": "MARIAGE",
+  "footer_text": "Made by les mimines de Claire",
 
-    "title-logement": "Logements",
-    "text-contactus": "Nous contacter par sms pour réserver",
-    "voirplus": "Voir plus",
-    "voirplus1": "Voir plus",
-    "voirplus2": "Voir plus",
-    "voirplus3": "Voir plus",
-    "voirplus4": "Voir plus",
-    "tarifgroup": "(Tarif groupe à partir de 25 personnes)",
-    "button-guide": "Télécharger le guide complet des hébergements"
+  "title-logement": "Logements",
+  "text-contactus": "COMPLET",
+  "voirplus": "Voir plus",
+  "voirplus1": "Voir plus",
+  "voirplus2": "Voir plus",
+  "voirplus3": "Voir plus",
+  "voirplus4": "Voir plus",
+  "tarifgroup": "(Tarif groupe à partir de 25 personnes)",
+  "button-guide": "Télécharger le guide complet des hébergements"
 }
