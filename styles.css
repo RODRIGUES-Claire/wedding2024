@@ -767,6 +767,7 @@ i.star {
 .form {
   box-shadow: 0 2px 5px rgba(46, 60, 64, 0.4);
   border-radius: 10px;
+  height: 500px;
 }
 
 /* ----------------------------------------
