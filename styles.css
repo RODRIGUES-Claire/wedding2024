@@ -366,6 +366,10 @@ div.card li {
   align-items: center;
 }
 
+div.card-container-table li {
+  font-size: 1.2em;
+}
+
 /* ----------------------------------------
 ----------------CARDS------------------ 
 ---------------------------------------- */
@@ -376,17 +380,29 @@ div.card-container {
   gap: 1em;
 }
 
+div.card-container-table {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+  margin: 0 10em;
+}
+
 div.card {
   border-top: 4px solid var(--primaryDarkest);
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding: 64px 16px;
   width: 325px;
   text-align: center;
   box-shadow: 0 2px 5px rgba(46, 60, 64, 0.2);
+}
+
+.menu {
+  padding: 64px !important;
 }
 
 ul {
@@ -955,10 +971,9 @@ i.star {
     color: var(--primaryDarkest);
   }
 
-  section.second h1 {
-    /* margin: 0 16px; */
+  /* section.second h1 {
     width: 90%;
-  }
+  } */
 
   div.form iframe {
     width: 360px;
